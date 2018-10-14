@@ -1,13 +1,19 @@
 #include <iostream>
 using namespace std;
 
+void swap(int *x, int *y){
+  int temp = *x;
+  *x = *y;
+  *y = temp;
+}
+
 void Permute(int *a, int i, int n){
-  if(i == n)(
+  if(i == n){
     for (int j = 0; j <= n; j++){
       cout << *(a + j);
     }
     cout << endl;
-  )
+  }
   else{
     for (int j = i; j <= n; j++){
       swap((a+i), (a+j));
@@ -16,6 +22,7 @@ void Permute(int *a, int i, int n){
     }
   }
 }
+
 
 void permutNumbers(int n){
   int a[30];
