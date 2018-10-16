@@ -6,7 +6,7 @@ Department of Information System
  
 2) Embed your function into a little program that reads two integers n and r from std::cin and writes the value of the binomial coefficient to std::cout
  
-~~~
+~~~cpp
 #include <iostream>
  
 using namespace std;
@@ -42,7 +42,7 @@ Write a function permutNumbers that prints all n! many permutations of the numb
 Example: the output for permutNumbers (3) shall be:
 123, 132, 213, 231, 312, 321
  
-~~~
+~~~cpp
 #include <iostream>
 using namespace std;
  
@@ -83,7 +83,7 @@ int main(){
 ~~~
 
 3. Given the following function definition:
-~~~
+~~~cpp
 int sum_down(int x)
 {
     if (x >= 0)
@@ -102,7 +102,7 @@ a)What is this smallest integer value of the parameter x, so that the returned v
       
      -> x==19  
 b)Rewrite the function, so that it is free of recursion. I.e. give an iterative definition on the foundation of a loop-construct. TIP: First transform the recursive definition, so that you have just a single recursive call.
-~~~
+~~~cpp
 #include<iostream>
  
 int sum_down_iterative(int x)  // change into loop
