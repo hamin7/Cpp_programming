@@ -45,6 +45,7 @@ std::cout<<m;
 Exercise 3
 Write a program that asks the user to type numbers. After each entry, the program should report the cumulative sum of the entries. The program should terminate when the user enters 0.
 
+~~~cpp
 #include <iostream>
 
 int main()
@@ -64,7 +65,7 @@ int main()
 	return 0;
 
 }
-
+~~~
 
 Exercise 4
 Create a program to determine the GCD (Greatest Common Divisor) of two integers x and y using a ‘while loop’. 
@@ -75,6 +76,8 @@ Formal description of the Euclidean algorithm
 1.  If a<b, exchange a and b. 
 2.  Divide a by b and get the remainder, r.  If r=0, report b as the GCD of a and b. 
 3.  Replace a by b and replace b by r. Return to the previous step. 
+
+~~~cpp
 #include <iostream>
 int main()
 {
@@ -99,3 +102,4 @@ int main()
  std::cout << "The greatest common divisior is " << g << std::endl;
  return 0;
 }
+~~~
