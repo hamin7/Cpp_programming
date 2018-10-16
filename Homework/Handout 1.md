@@ -1,5 +1,6 @@
 Handout 1 C++ Programming
 
+
 Exercise 1
 Given the following assignment of variables to values:
 
@@ -14,11 +15,14 @@ Condition                             Result
 (Sens*(!y))!=0                          0
 (!x||y)&&(!y||x)                        1
 
+
 Exercise 2
 Write a program in C++ that performs the following tasks:
 1.  Read three integer values using cin.
 2.  Determine the maximum of the three values entered by the user.
 3.  Print the maximum of this three values using cout.
+
+~~~cpp
 #include <iostream>
 int main()
 {
@@ -36,7 +40,7 @@ m=c;
 }
 std::cout<<m;
 }
-
+~~~
 
 Exercise 3
 Write a program that asks the user to type numbers. After each entry, the program should report the cumulative sum of the entries. The program should terminate when the user enters 0.
