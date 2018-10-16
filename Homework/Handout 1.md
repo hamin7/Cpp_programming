@@ -6,6 +6,7 @@ Given the following assignment of variables to values:
 
 Fill in the result values of the conditions in the table below:
 
+~~~cpp
 Condition                             Result 
 (x>y) && !y                             0
 (item>MIN)||(DAY!=’M’)                  1
@@ -14,7 +15,7 @@ Condition                             Result
 ((y+x)<num)||(DAY==’M’)                 1
 (Sens*(!y))!=0                          0
 (!x||y)&&(!y||x)                        1
-
+~~~
 
 Exercise 2
 Write a program in C++ that performs the following tasks:
