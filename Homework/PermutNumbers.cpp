@@ -1,38 +1,36 @@
-#include <iostream>
-using namespace std;
+#include <iostrem>
 
-void swap(int *x, int *y){
-  int temp = *x;
-  *x = *y;
-  *y = temp;
+void swap (int &x, int &y){
+  int temp;
+  temp = x;
+  x = y;
+  y = temp;
 }
 
-void Permute(int *a, int i, int n){
-  if(i == n){
-    for (int j = 0; j <= n; j++){
-      cout << *(a + j);
+void permute(int a[], int i, int n){
+  if ( i == n){
+    for (int j = 0; j <= n; j++)
+    {
+      std::cout << a[j];
     }
-    cout << endl;
+    std::cout << std:: endl;
   }
-  else{
-    for (int j = i; j <= n; j++){
-      swap((a+i), (a+j));
-      Permute(a, i+1, n);
-      swap((a+i), (a+j));
+  else
+  {
+    for (int j = i; j <= n; j++)
+    {
+      swap(a[i], a[j]);
+      permute(a, i+1, n);
+      swap(a[i], a[j]);
     }
   }
-}
-
-
 void permutNumbers(int n){
   int a[30];
-  for ( int i = 1; i <= n; i++){
+  for (int i = 1; i <= n; i++){
     a[i-1] = i;
   }
-  Permute(a, 0, n-1);
+  permute(a, 0, n-1);
 }
-
-int main(){
+void main(){
   permutNumbers(3);
-  return 0;
 }
