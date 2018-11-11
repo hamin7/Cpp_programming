@@ -1,5 +1,5 @@
 # Exercise 1: Class and object definition
-## a) Define a class Student with the following attributes:
+### a) Define a class Student with the following attributes:
 Name : char[100]
 
 Number : integer
@@ -13,7 +13,7 @@ class Student{
 	Course Courses[10];
 ~~~
 
-## b) Make each of the above attributes private and define for each attribute a pair of public get-set-methods 
+### b) Make each of the above attributes private and define for each attribute a pair of public get-set-methods 
 ~~~cpp
 class Student{
 	private:
@@ -43,7 +43,7 @@ class Student{
 };
 ~~~
 
-## c) Create a constructor-method for your Student-class for initializing objects of the Student-Class.
+### c) Create a constructor-method for your Student-class for initializing objects of the Student-Class.
 ~~~cpp
 class Student{
 	private:
@@ -78,7 +78,7 @@ class Student{
 };
 ~~~
 
-## d) Create a class Course with following attributes:
+### d) Create a class Course with following attributes:
 
 Id: integer
 
@@ -94,7 +94,7 @@ class Course{
 };
 ~~~
 
-## e) Using the above two classes create a simple application that allows the assignment of students to courses (using the Courses attribute of the class Student). Your application should internally store a sequence of Student objects either by using an array of by using a linked list.
+### e) Using the above two classes create a simple application that allows the assignment of students to courses (using the Courses attribute of the class Student). Your application should internally store a sequence of Student objects either by using an array of by using a linked list.
 
 ~~~cpp
 int main(){
@@ -126,7 +126,7 @@ int main(){
 }
 ~~~
 
-## f) Extend your application by a query function that prints for a given course-Id the name and number of all students who attend this course.
+### f) Extend your application by a query function that prints for a given course-Id the name and number of all students who attend this course.
 ~~~cpp
 void PrintCourseInfo(int Course_ID, Student Arr_Student[], int StudentSize){
 
@@ -142,7 +142,7 @@ void PrintCourseInfo(int Course_ID, Student Arr_Student[], int StudentSize){
 }
 ~~~
 
-## Full Code
+### Full Code
 ~~~cpp
 #include <iostream>
 using namespace std;
