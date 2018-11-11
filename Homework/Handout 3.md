@@ -1,5 +1,5 @@
 Exercise 1: Class and object definition
-****************************************
+***
 a) Define a class Student with the following attributes:
 Name : char[100]
 Number : integer
