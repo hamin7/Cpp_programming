@@ -38,9 +38,12 @@ class Character : public Object{
 3. Overload the operator + for the class Character, so that it can add two objects of type Character.
 ~~~cpp
 Character operator + (const Character &rCharacter)
-	{
-		Character Char_Ret;
-		Char_Ret.ch = (ch + rCharacter.ch) % 128;     // ASCII
-		return Char_Ret;
-	}
+{
+	Character Char_Ret;
+	Char_Ret.ch = (ch + rCharacter.ch) % 128;     // ASCII
+	return Char_Ret;
+}
 ~~~
+
+4. Override the operator + in the Digit class, so that it adds the numeric value of two digits
+and delivers the digit that we get
