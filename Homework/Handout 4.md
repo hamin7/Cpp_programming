@@ -107,3 +107,62 @@ int main(){
 	Consonant con[2];
 }
 ~~~
+
+8. Full code
+~~~cpp
+#include <iostream>
+using namespace std;
+
+class Object{
+	public:
+	static int Int_Count;
+	Object(){
+		++Int_Count;
+		cout << "Current Object created : " << Int_Count << endl;
+	}
+};
+int Object::Int_Count = 0;
+
+class Character : public Object{
+	public:
+	Character operator + (const Character &rCharacter)
+	{
+		Character Char_Ret;
+		Char_Ret.ch = (ch + rCharacter.ch) % 128;     // ASCII
+		return Char_Ret;
+	}
+	char GetCh(){
+		return ch;
+	}
+	void SetCh(char a_Ch){
+		ch = a_Ch;
+	}
+	protected:
+	char ch;
+};
+class Digit : public Character{
+	public:
+	Digit operator + (const Digit &rDigit){
+		Digit Dig_Ret;
+		Dig_Ret.ch = (((ch - '0') + (rDigit.ch - '0')) % 10) + '0';
+		return Dig_Ret;
+	}
+};
+class Letter : public Character{
+	
+};
+class Vowel : public Letter{
+	
+};
+class Consonant : public Letter{
+	
+};
+
+int main(){
+	Character ch[2];
+	Digit dig[2];
+	Letter let[2];
+	Vowel vow[2];
+	Consonant con[2];
+}
+~~~
