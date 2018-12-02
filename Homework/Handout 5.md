@@ -62,6 +62,7 @@ A
 FA
 E
 F
+
 2. a) Extend the above code by adding an exception class for exception-object creation. Your exception class should comprise an error indicating attribute (e.g. by using an integer.) and an appropriate constructor.
 
 b) Change the throw statement in line 5 so that it throws objects of your exception class.
