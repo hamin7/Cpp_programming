@@ -44,6 +44,24 @@ iii) 	throw true;
 
 First try to develop the answers by simply analysing the code. Afterwards take a compiler for verifying whether your answers were right or not.	
 
+i) throw (double)5.0;
+A
+FA
+D 5
+F
+
+ii) 	throw ‘c';
+A
+FA
+FCB c
+E
+F
+
+iii) 	throw true;
+A
+FA
+E
+F
 2. a) Extend the above code by adding an exception class for exception-object creation. Your exception class should comprise an error indicating attribute (e.g. by using an integer.) and an appropriate constructor.
 
 b) Change the throw statement in line 5 so that it throws objects of your exception class.
