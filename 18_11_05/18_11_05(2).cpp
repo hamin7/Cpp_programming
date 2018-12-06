@@ -17,3 +17,5 @@ void main(){
   Circle c1;
   std::cout << Circle::counter << std::endl;
 }
+
+이거 뭔가 이상함
