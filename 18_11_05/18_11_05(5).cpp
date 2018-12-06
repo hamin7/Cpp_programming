@@ -1,7 +1,7 @@
 #include <iostream>
 class Circle{
 public:
-  Circle(double radius){ this->radius = radius; }
+  Circle(double radius){ this->radius = radius; }            // Circle 클래스의 생성자???
   double radius;
   double operator+ (Circle &c2){
     return radius + c2.raidus;
