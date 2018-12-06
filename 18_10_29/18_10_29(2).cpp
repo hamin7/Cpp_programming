@@ -1,6 +1,6 @@
 #include <iostream>
 #include "Circle.h"     // header type
-double Circle::area(){
+double Circle::area(){.      // 
   return radius * radius * 3.14;
 }
 
