@@ -2,9 +2,9 @@
 
 class Circle{
 public:
-  Circle( double r ){     // default Constructor
+  Circle( double r ){     // double타입 r을 매개변수로 갖는 Circle 생성자(constructor)
     std::cout << "Default Constructor called ... " << r << std::endl;
-    radius = r;
+    radius = r;         // radius에 r을 넣는다
   }     // Constructor
   double radius;     // attribute
   double area()     // method
