@@ -4,7 +4,6 @@ class Circle{
 public:
   // Constructor
   Circle( double r ) : radius(r >= 0 ? r : 0){
-
   }
   const double radius;     // attribute
   double area()     // method
