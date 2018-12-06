@@ -5,7 +5,7 @@ private:
   double radius;     // attribute 정의
 
 public:
-  // Constructor
+  // Constructor 생성자!!
   Circle( double r ){              // Circle이라는 생성자는 r을 받아서 
     radius = r >= 0? r : 0;    // r>=0 이라면 r을 리턴하고 아니라면 0을 리턴
   }
