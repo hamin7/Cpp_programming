@@ -15,6 +15,11 @@ class C : public B {
 public: virtual void m() {std::cout << "In C" << std::endl; }
 };
 
-void main(){
-  A objA; A *ptr; B objB; ptr = &objB; (*ptr).m(); // dereferencing ptr (*ptr).m() == ptr->m(); // java와 다른부분
+int main(){
+	A objA;       // A의 객체 objA
+	A *ptr;       // A의 객체 포인터 ptr
+	B objB;       // B의 객체 objB
+	ptr = &objB;     // ptr는 objB의 주소를 가리킴
+	(*ptr).m(); // dereferencing ptr 역참조 B의 m()매소드를 호출
+	//(*ptr).m() == ptr->m(); // java와 다른부분
 }
