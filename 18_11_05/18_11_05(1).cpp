@@ -1,24 +1,27 @@
 #include <iostream>
 
-
 class Circle{
+private:
+	
 public:
-  static int counter;     // is merely a declaration
-  Circle(){ counter++; }      // default construct.  기본생성자
-
-  double radius;
-
+	double radius;
   double area(){
-     counter++;
-    //return radius*radius*3.14;
+    return radius*radius*3.14;
   }
+  friend void fun( Circle &c );     // friend declaration  클래스 Circle은 메소드 fun을 친구로 생각
 };
-// int couunter = 0;     // global variable
-int Circle::counter = 0;        // Circle 클래스의 counter = 0으로 세팅.  얘 안에서 하면 안돌아감 왜냐면 그렇게 하면 static 하는 의미가 없으니까 객체 생성시마다 초기화가 되는거니까
 
-void main(){
-  Circle c;          // 오브젝트 c 선언
-  Circle c1;         // 오브젝트 c1 선언
-  c.area();
-  std::cout << Circle::counter << std::endl;
+void fun( Circle &c ){      // &c 안하고 그냥 (Circle c) 하면 에러 남 / 왜??? 에러는 안나지만 결과적으로 c1의 radius값은 안바뀜 용량도 아낄수 있음 왜냐면 call by value는 복사해서 쓰므로 공간이 두배
+  c.radius = c.radius * 2;        // 
 }
+
+int main(){
+  Circle c; 
+  Circle c1;
+	c.radius = 3.0;
+	c1.radius = 2.0;
+	std::cout << c1.radius << std::endl;
+  fun(c1);
+	std::cout << c1.radius << std::endl;
+}
+
