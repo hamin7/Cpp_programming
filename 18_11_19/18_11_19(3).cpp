@@ -27,3 +27,10 @@ int main(){
 
 // catch 블럭 안에서도 throw 문 가능?? yes
 // 하지만 avoid 해야 함.
+/*
+Before fun() ...
+Before throw in fun
+inner catch4
+outer catch4
+After catch block
+*/
