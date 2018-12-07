@@ -7,7 +7,7 @@ public:
     return radius*radius*3.14;       // 넓이를 구해서 리턴해라
   }
 };
-double operator+ (Circle &c1, Circle &c2){         // 요건 double타입 매소드???
+double operator+ (Circle &c1, Circle &c2){         // 요건 double타입 매소드???   연산자 오버로딩
   return c1.radius + c2.raidus;                    // c1과 c2의 반지름을 더해서 리턴해라
 }
 void main(){
