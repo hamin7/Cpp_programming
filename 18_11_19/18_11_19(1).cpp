@@ -15,3 +15,10 @@ int main(){
 		}
 	cout << "After catch block" << endl;
 }
+
+/*
+output
+Before throw ...
+In elipsis catch with exception
+After catch block
+*/
