@@ -11,8 +11,10 @@ public:
 };
 class C {
 public:
-  void method() { std::cout << attr << std::endl; }
+  //void method() { std::cout << attr << std::endl; }
 };
-void main(){
-
+int main(){
+	A a;
 }
+
+attr는 protected이기 때문에 subclass인 B에서만 접근 가능 main이나 C에서는 접근 불가
