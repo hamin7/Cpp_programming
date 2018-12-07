@@ -20,3 +20,5 @@ void main()
   Circle c(3.0);     // initialization of public members only!   // defines an object
   std::cout << c.get_area() << std::endl;     // 오브젝트 c의 area를 출력
 }
+
+http://unikys.tistory.com/355
