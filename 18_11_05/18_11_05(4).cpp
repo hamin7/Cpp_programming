@@ -7,12 +7,13 @@ public:
     return radius*radius*3.14;       // 넓이를 구해서 리턴해라
   }
 };
-double operator+ (Circle &c1, Circle &c2){         // 요건 double타입 매소드???   연산자 오버로딩
-  return c1.radius + c2.raidus;                    // c1과 c2의 반지름을 더해서 리턴해라
-}
-void main(){
-  Circle c(2); Circle c1(4);            // c의 반지름은 2 c1의 반지름은 4
-  std::cout << (c + c1) << std::endl;           // 6 :: c와 c1을 더해라
+double operator* (Circle &c1, Circle &c2){         // 요건 double타입 매소드???   연산자 오버로딩
+  return c1.radius * c2.radius;                    // c1과 c2의 반지름을 더해서 리턴해라
 }
 
-이건 잘 돌아간다!
+int main(){
+  Circle c(2); 
+	Circle c1(4);            // c의 반지름은 2 c1의 반지름은 4
+  std::cout << (c * c1) << std::endl;           // 6 :: c와 c1을 더해라
+}
+
