@@ -19,3 +19,10 @@ int main(){
 	}
 	cout << "After catch block" << endl;
 }
+
+/*
+Before fun() ...
+Before throw in fun
+In int catch with exceptiron4
+After catch block
+*/
