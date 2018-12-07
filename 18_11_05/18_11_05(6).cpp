@@ -10,13 +10,12 @@ public:
   friend double operator+ ( double d, Circle &c2);
 };
 double operator+ ( double d, Circle &c2){
-  return d + c2.raidus;
+  return d + c2.radius;
 }
 
-void main(){
-  Circle c(2); Circle c1(4);
-  std::cout << (c + c1) std::endl;
+int main(){
+	double k = 3.0;
+	Circle c(2); 
+	Circle c1(4);
+	std::cout << (k + c1) << std::endl;
 }
-
-
-흠 뭔가 이상
