@@ -10,5 +10,5 @@ void operator<< ( std::ostream &out, Circle &c){     // only output stream
 
 void main(){
   Circle c(2); Circle c1(4);
-  std::cout << c;
+  std::cout << c;                          // 이거 무슨 소리?? << 연산하는거?
 }
