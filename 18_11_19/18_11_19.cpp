@@ -10,10 +10,19 @@ int main(){
 		}
 		catch ( int e ){
 			cout << "In int catch with exceptiron" << e << endl;
+			break;
 		}
 		catch( double e ){
 			cout << "In double catch with exception" << e << endl;
+			break;
 		}
 	}
 	cout << "After catch block" << endl;
 }
+
+/*
+output
+Before throw ...
+In double catch with exception3
+After catch block
+*/
