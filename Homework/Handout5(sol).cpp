@@ -57,3 +57,10 @@ void main(){
   }
   std::cout << "F\n";
 }
+
+/*
+A
+FA
+Problem has code: 3
+F
+*/
