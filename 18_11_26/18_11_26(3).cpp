@@ -12,3 +12,7 @@ i = 5; j = 6;
 int k = max<int>( i, j );     // type inference
 std::cout << k << std::endl;
 }
+
+/*
+6
+*/
