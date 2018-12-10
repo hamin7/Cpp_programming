@@ -13,3 +13,5 @@ double j = 6;
 int k = max( i, j );     // type inference
 std::cout << k << std::endl;
 }      // function
+
+// 타입이 달라서 안돌아감
