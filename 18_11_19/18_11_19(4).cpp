@@ -8,8 +8,8 @@ public:
 		this -> code = code; 
 		cout << "construction" << endl; 
 	}
-	void what() {cout << "Problem code is" << code << endl;}
-	~Exception(){cout << "destruction"}
+	void what() {cout << "Problem code is " << code << endl;}
+	~Exception(){cout << "destruction " << endl;}
 };
 
 int main(){
@@ -23,3 +23,13 @@ int main(){
 	}
 	cout << "After catch block" << endl;
 }
+
+
+/*
+Before try ...
+construction
+Problem code is 2
+destruction
+destruction
+After catch block
+*/
