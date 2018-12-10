@@ -33,3 +33,10 @@ int main(){
 // never
 // throw new Exception();
 // catch(Exception *e)
+
+/*
+Before try...
+In derived class ... 2
+des
+After catch block
+*/
