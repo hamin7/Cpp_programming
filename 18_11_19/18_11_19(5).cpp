@@ -18,7 +18,7 @@ class DerivedException : public Exception{
 	DerivedException( int code ){ this -> code = code; }
 	virtual void what() {cout << "In dereived class ..." << code << endl;}
 	
-}
+};
 
 int main(){
 	try{
@@ -31,3 +31,10 @@ int main(){
 	}
 	cout << "After catch block" << endl;
 }
+
+/*
+Before try ...
+In dereived class ...2
+destruction
+After catch block
+*/
