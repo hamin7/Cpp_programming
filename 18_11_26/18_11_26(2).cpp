@@ -16,3 +16,7 @@ int main(){
 	list<double, 0> my_list;
 	my_list.m();
 }     // function
+
+/*
+0
+*/
